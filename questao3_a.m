@@ -5,7 +5,7 @@ passband_freq = 0.63; % Frequência limite da banda de passagem (normalizada)
 stopband_freq = 0.65; % Frequência limite da banda de rejeição (normalizada)
 
 % Projeto do filtro FIR usando Parks-McClellan
-forder = 100; % Ordem inicial do filtro
+forder = 84;
 frequencies = [0, passband_freq, stopband_freq, 1]; % Vetor de frequências normalizadas
 magnitudes = [1, 1, 0, 0]; % Vetor de magnitudes
 weights = [1/passband_ripple, 1/stopband_ripple]; % Vetor de pesos
